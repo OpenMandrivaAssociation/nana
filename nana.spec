@@ -16,6 +16,7 @@ BuildRequires:	pkgconfig(libjpeg)
 BuildRequires:	pkgconfig(fontconfig)
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xft)
+BuildRequires:	pkgconfig(xcursor)
 BuildRequires:	pkgconfig(zlib)
 BuildRequires:	pkgconfig(alsa)
 
