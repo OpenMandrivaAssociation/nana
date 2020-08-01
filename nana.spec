@@ -10,7 +10,7 @@ Source0:	https://github.com/cnjinhao/nana/archive/v%{version}.tar.gz
 Patch0:		nana-1.7.4-find-alsa.patch
 Group:		System/Libraries
 License:	BSL-1.0
-BuildRequires:	cmake
+BuildRequires:	cmake ninja
 BuildRequires:	pkgconfig(libpng)
 BuildRequires:	pkgconfig(libjpeg)
 BuildRequires:	pkgconfig(fontconfig)
@@ -65,7 +65,8 @@ cmake \
 	-DNANA_CMAKE_INSTALL:BOOL=ON \
 	-DNANA_STATIC_STDLIB:BOOL=OFF \
 	-DNANA_CMAKE_ENABLE_AUDIO:BOOL=ON \
-	-G Ninja
+	-G Ninja \
+	.
 
 %build
 %ninja_build
