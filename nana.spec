@@ -5,7 +5,7 @@
 Name:		nana
 Summary:	A C++ GUI library
 Version:	1.7.4
-Release:	1
+Release:	2
 Source0:	https://github.com/cnjinhao/nana/archive/v%{version}.tar.gz
 Patch0:		nana-1.7.4-find-alsa.patch
 Group:		System/Libraries
